@@ -112,16 +112,19 @@ To run unit test run TestProject1
 
 ## Integartion test:
 1. Add email:
-```curl -X POST "http://localhost:50352/v2/breachedemails" -H  "accept: */*" -H  "Content-Type: application/json-patch+json" -d "{\"name\":\"janez@test.si\"}"
+```
+curl -X POST "http://localhost:50352/v2/breachedemails" -H  "accept: */*" -H  "Content-Type: application/json-patch+json" -d "{\"name\":\"janez@test.si\"}"
 ```
 return code 200 - created
 return code 400 - conflict
 2. Get email
-```curl -X GET "http://localhost:50352/v2/breachedemails/janez%40test.si" -H  "accept: */*"
+```
+curl -X GET "http://localhost:50352/v2/breachedemails/janez%40test.si" -H  "accept: */*"
 ```
 return code 200 - OK
 return code 400 - NotFound
 3. Delete email:
-```curl -X DELETE "http://localhost:50352/v2/breachedemails/janez%40test.si" -H  "accept: */*"
+```
+curl -X DELETE "http://localhost:50352/v2/breachedemails/janez%40test.si" -H  "accept: */*"
 ```
 return code 200 - OK
