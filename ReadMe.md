@@ -108,9 +108,15 @@ docker run -p 5000:5000 io.swagger
 	[localhost swagger](http://localhost:50352/swagger/index.html "localhost swagger")
 
 ## Unit test:
-To run unit test run TestProject1
+
+To run unit test run \TestProject1
 
 ## Integartion test:
+
+To run integration test go to
+\IntegrationTest\TestProject1
+
+## Curl test and return codes
 1. Add email:
 
 ```
@@ -129,7 +135,7 @@ curl -X GET "http://localhost:50352/v2/breachedemails/janez%40test.si" -H  "acce
 
 return code 200 - OK
 
-return code 400 - NotFound
+return code 404 - NotFound
 
 3. Delete email:
 ```

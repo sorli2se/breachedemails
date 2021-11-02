@@ -105,7 +105,7 @@ namespace IO.Swagger.Test
             // TODO uncomment below to test the method and replace null with proper value
             string breachedemail = "janez@test.si";
             int r = instance.Get(breachedemail);
-            Assert.AreEqual(r, 400);
+            Assert.AreEqual(r, 404);
 
 
         }
