@@ -43,9 +43,10 @@ paths:
           $ref: "#/definitions/Breachedemail"
       responses:
         "200":
-          description: "Created"
-        "400":
-          description: "Conflict"
+          description: "Created or Conflict"
+          schema:
+            type: string
+            example: Created or Conflict
   /breachedemails/{breachedemail}:
     get:
       tags:
@@ -64,9 +65,10 @@ paths:
         type: "string"
       responses:
         "200":
-          description: "OK"
-        "400":
-          description: "NotFound"
+          description: "OK or NotFound"
+          schema:
+            type: string
+            example: OK or NotFound
     delete:
       tags:
       - "breachedemail"
@@ -85,6 +87,9 @@ paths:
       responses:
         "200":
           description: "OK"
+          schema:
+            type: string
+            example: OK
 definitions:
   Breachedemail:
     type: "object"

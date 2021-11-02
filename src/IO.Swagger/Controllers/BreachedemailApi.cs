@@ -110,7 +110,7 @@ namespace IO.Swagger.Controllers
             }
             else
             {
-                return StatusCode(400);
+                return StatusCode(404);
             }
         }
     }
